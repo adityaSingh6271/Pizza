@@ -20,6 +20,7 @@ const Header = () => {
       <div className="right">
         <img id="Pizza" src={Pizza} alt="Pizza" />
         <img id="Red" src={RedVector} alt="Vector" />
+        <button className="get-in-touch">Get In Touch</button>
       </div>
     </div>
   );

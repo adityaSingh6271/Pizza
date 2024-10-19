@@ -86,6 +86,54 @@
   width: 550px;
 }
 
+/* Add these new styles to your existing CSS without modifying the current code */
+
+.get-in-touch {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 12px 30px;
+  background: transparent;
+  border: 1px solid white;
+  color: white;
+  border-radius: 25px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  z-index: 10;
+}
+
+.get-in-touch:hover {
+  background-color: white;
+  color: #e63946;
+}
+
+/* Add these media queries for the new button */
+@media screen and (max-width: 1024px) {
+  .get-in-touch {
+    padding: 10px 25px;
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .get-in-touch {
+    top: 15px;
+    right: 15px;
+    padding: 8px 20px;
+    font-size: 0.85rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .get-in-touch {
+    top: 10px;
+    right: 10px;
+    padding: 6px 15px;
+    font-size: 0.8rem;
+  }
+}
+
 .About {
   width: 100%;
   height: 467px;
@@ -141,13 +189,12 @@
   background-color: #d62828;
 }
 
-/* Articles Section */
 .Articles {
   margin-top: 100px;
   width: 100%;
   padding: 50px;
   text-align: center;
-  overflow: hidden; /* Added to prevent overflow issues */
+  overflow: hidden;
 }
 
 h1 {
@@ -171,6 +218,7 @@ h1 {
   padding: 20px;
   width: 280px;
   text-align: left;
+  margin-bottom: 20px;
 }
 
 .img-card img {
@@ -227,7 +275,6 @@ h1 {
   color: #264653;
 }
 
-/* Footer */
 footer {
   background-color: #f9f9f9;
   padding: 40px 0;
@@ -327,4 +374,157 @@ footer {
 
 .more ul li {
   margin-bottom: 10px;
+}
+
+/* Media Queries */
+
+/* Tablet Devices */
+@media screen and (max-width: 1024px) {
+  .container {
+    flex-direction: column;
+    padding: 30px;
+  }
+
+  .left {
+    margin-bottom: 50px;
+    text-align: center;
+  }
+
+  .left h1 {
+    width: 100%;
+    font-size: 2.8rem;
+  }
+
+  .left p {
+    max-width: 100%;
+    margin: 20px auto;
+  }
+
+  .right {
+    margin-left: 0;
+  }
+
+  #Pizza {
+    width: 400px;
+    height: 400px;
+    margin-left: 0;
+    margin-top: 0;
+  }
+
+  #Red {
+    width: 450px;
+    height: 450px;
+  }
+
+  .About {
+    height: auto;
+    padding: 40px 20px;
+  }
+
+  .about-content {
+    flex-direction: column;
+  }
+
+  .about-image {
+    width: 100%;
+    max-width: 384px;
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+
+  .about-text {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .about-text h1 {
+    width: 100%;
+  }
+
+  h1 {
+    margin-right: 0;
+    text-align: center;
+  }
+
+  .footer-container {
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+}
+
+/* Mobile Devices */
+@media screen and (max-width: 768px) {
+  .left h1 {
+    font-size: 2.2rem;
+  }
+
+  .left p {
+    font-size: 1rem;
+  }
+
+  #Pizza {
+    width: 300px;
+    height: 300px;
+  }
+
+  #Red {
+    width: 350px;
+    height: 350px;
+  }
+
+  .about-text h1 {
+    font-size: 2rem;
+  }
+
+  .img-card {
+    width: 100%;
+    max-width: 320px;
+  }
+
+  .footer-container {
+    flex-direction: column;
+  }
+
+  .footer-section {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .footer-contact,
+  .footer-more,
+  .footer-social {
+    text-align: center;
+  }
+}
+
+/* Small Mobile Devices */
+@media screen and (max-width: 480px) {
+  .container {
+    padding: 20px;
+  }
+
+  .left h1 {
+    font-size: 1.8rem;
+  }
+
+  #Pizza {
+    width: 250px;
+    height: 250px;
+  }
+
+  #Red {
+    width: 280px;
+    height: 280px;
+  }
+
+  .Articlebtn {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+  }
+
+  .pagination button {
+    padding: 6px 12px;
+    margin: 0 5px;
+  }
 }

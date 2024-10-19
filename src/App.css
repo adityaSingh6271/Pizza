@@ -86,8 +86,6 @@
   width: 550px;
 }
 
-/* Add these new styles to your existing CSS without modifying the current code */
-
 .get-in-touch {
   position: absolute;
   top: 20px;
@@ -108,7 +106,6 @@
   color: #e63946;
 }
 
-/* Add these media queries for the new button */
 @media screen and (max-width: 1024px) {
   .get-in-touch {
     padding: 10px 25px;

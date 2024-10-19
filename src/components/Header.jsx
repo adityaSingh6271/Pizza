@@ -19,7 +19,6 @@ const Header = () => {
       </div>
       <div className="right">
         <img id="Pizza" src={Pizza} alt="Pizza" />
-
         <img id="Red" src={RedVector} alt="Vector" />
       </div>
     </div>
